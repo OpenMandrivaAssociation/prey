@@ -2,7 +2,7 @@
 %define version 0.5.3
 
 Name: %{name}
-Summary: Prey is a lightweight application for tracking your stolen laptop.
+Summary: Prey is a lightweight application for tracking your stolen laptop
 Version: %{version}
 Release: %mkrel 1
 License: GPLv3
