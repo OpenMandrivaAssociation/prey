@@ -9,7 +9,7 @@ License: GPLv3
 Group: Monitoring
 Source: http://preyprojetc.com/releases/%{version}/%{name}-%{version}-linux.zip
 URL:	http://preyproject.com/
-Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL
+Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, imagemagick, traceroute
 BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
 %description
@@ -35,7 +35,7 @@ cat << EOF > %buildroot%_sysconfdir/cron.d/%name
 EOF
 
 %files
-%defattr(0644,root,root)
+%defattr(0755,root,root)
 %{_datadir}/%{name}
 %{_sysconfdir}/cron.d/prey
 
