@@ -4,7 +4,7 @@
 Name: %{name}
 Summary: Prey is a lightweight application for tracking your stolen laptop
 Version: %{version}
-Release: %mkrel 1
+Release: %mkrel 2
 License: GPLv3
 Group: Monitoring
 Source: http://preyprojetc.com/releases/%{version}/%{name}-%{version}-linux.zip
