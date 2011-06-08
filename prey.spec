@@ -4,12 +4,13 @@
 Name: %{name}
 Summary: Prey is a lightweight application for tracking your stolen laptop
 Version: %{version}
-Release: %mkrel 2
+Release: %mkrel 3
 License: GPLv3
 Group: Monitoring
 Source: http://preyprojetc.com/releases/%{version}/%{name}-%{version}-linux.zip
+Source1: prey-config.desktop
 URL:	http://preyproject.com/
-Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, imagemagick, traceroute
+Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, imagemagick, traceroute, gksu
 BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
 %description
@@ -23,10 +24,13 @@ which is used to maintain the simple config file.
 %prep
 rm -rf %{buildroot}
 %setup -n prey
+install -m 755 %{SOURCE1} prey-config.desktop
 
 %install
 mkdir -p %{buildroot}%{_datadir}/%{name}
 mkdir -p %{buildroot}%{_sysconfdir}/cron.d/
+mkdir -p %{buildroot}%{_datadir}/applications/
+install -m 755 prey-config.desktop %{buildroot}%{_datadir}/applications/
 
 mv * %{buildroot}%{_datadir}/%{name}/
 
@@ -38,6 +42,7 @@ EOF
 %defattr(0755,root,root)
 %{_datadir}/%{name}
 %{_sysconfdir}/cron.d/prey
+%{_datadir}/applications/prey-config.desktop
 
 %clean
 rm -rf $RPM_BUILD_ROOT
