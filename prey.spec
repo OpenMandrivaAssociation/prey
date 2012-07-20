@@ -1,5 +1,5 @@
 %define name prey
-%define version 0.5.3
+%define version 0.5.4
 
 Name: %{name}
 Summary: Prey is a lightweight application for tracking your stolen laptop
@@ -7,11 +7,10 @@ Version: %{version}
 Release: %mkrel 3
 License: GPLv3
 Group: Monitoring
-Source: http://preyprojetc.com/releases/%{version}/%{name}-%{version}-linux.zip
+Source0: http://preyproject.com/releases/0.5.4/prey-0.5.4-linux.zip
 Source1: prey-config.desktop
 URL:	http://preyproject.com/
 Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, imagemagick, traceroute, gksu
-BuildRoot: %_tmppath/%{name}-%{version}-buildroot
 
 %description
 Prey is a lightweight application for tracking your stolen laptop.
@@ -44,5 +43,3 @@ EOF
 %{_sysconfdir}/cron.d/prey
 %{_datadir}/applications/prey-config.desktop
 
-%clean
-rm -rf $RPM_BUILD_ROOT
