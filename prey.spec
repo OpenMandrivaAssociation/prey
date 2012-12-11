@@ -43,3 +43,25 @@ EOF
 %{_sysconfdir}/cron.d/prey
 %{_datadir}/applications/prey-config.desktop
 
+
+
+%changelog
+* Fri Jul 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 0.5.4-3mdv2012.0
++ Revision: 810389
+- version update 0.5.4
+
+* Wed Jun 08 2011 Leonardo Coelho <leonardoc@mandriva.org> 0.5.3-3
++ Revision: 683312
+- bump new version
+- config tool on menu
+
+* Tue Jun 07 2011 Leonardo Coelho <leonardoc@mandriva.org> 0.5.3-2
++ Revision: 683110
+- new version
+-Change on SPEC
+
+* Mon May 16 2011 Leonardo Coelho <leonardoc@mandriva.org> 0.5.3-1
++ Revision: 675128
+- first version of the package
+- Created package structure for prey.
+
