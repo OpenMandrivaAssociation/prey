@@ -4,7 +4,7 @@
 Name: %{name}
 Summary: Lightweight application for tracking your stolen laptop
 Version: %{version}
-Release: %mkrel 3
+Release: 4
 License: GPLv3
 Group: Monitoring
 Source0: http://preyproject.com/releases/0.5.4/prey-0.5.4-linux.zip
@@ -21,7 +21,6 @@ system administration. A graphical configuration tool is also provided
 which is used to maintain the simple config file.
 
 %prep
-rm -rf %{buildroot}
 %setup -n prey
 install -m 755 %{SOURCE1} prey-config.desktop
 
