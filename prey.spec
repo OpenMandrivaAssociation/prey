@@ -4,7 +4,7 @@
 Name: %{name}
 Summary: Lightweight application for tracking your stolen laptop
 Version: %{version}
-Release: 4
+Release: 5
 License: GPLv3
 Group: Monitoring
 Source0: http://preyproject.com/releases/0.5.4/prey-0.5.4-linux.zip
