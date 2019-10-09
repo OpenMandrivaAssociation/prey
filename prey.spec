@@ -3,7 +3,7 @@
 
 Name: %{name}
 Summary: Lightweight application for tracking your stolen laptop
-Version:	1.8.3
+Version:	1.9.1
 Release:	1
 License: GPLv3
 Group: Monitoring
