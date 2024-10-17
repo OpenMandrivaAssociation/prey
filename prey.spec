@@ -9,7 +9,7 @@ License: GPLv3
 Group: Monitoring
 Source0: http://preyproject.com/releases/0.5.4/prey-0.5.4-linux.zip
 Source1: prey-config.desktop
-URL:	http://preyproject.com/
+URL:	https://preyproject.com/
 Requires: curl, scrot, groff, streamer, perl-Net-SSLeay, perl-IO-Socket-SSL, mpg123, imagemagick, traceroute, gksu
 
 %description
